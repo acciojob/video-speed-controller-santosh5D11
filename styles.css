@@ -1,2 +1,80 @@
+* {
+  box-sizing: border-box;
+}
 
-/* Your CSS Code here. */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #193549;
+  font-family: Arial, sans-serif;
+}
+
+.player {
+  width: 765px;
+  max-width: 95%;
+  background: #111;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.viewer {
+  width: 100%;
+  display: block;
+}
+
+.progress {
+  height: 10px;
+  background: #555;
+  cursor: pointer;
+}
+
+.progress__filled {
+  width: 0%;
+  height: 100%;
+  background: #ffc600;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #222;
+}
+
+.player__button {
+  border: 0;
+  background: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  min-width: 40px;
+}
+
+.controls button {
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 4px;
+  background: #ffc600;
+  color: #111;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.controls button:hover {
+  background: #ffdb4d;
+}
+
+.controls input[type="range"] {
+  cursor: pointer;
+}
+
+.volume {
+  width: 100px;
+}
+
+.playbackSpeed {
+  width: 100px;
+}
